@@ -1,0 +1,34 @@
+Ejercicio práctico 1
+--------------------
+
+Ejercicio Práctico: Desarrollo de la Página Web de un Hospital
+
+Contexto:
+----------
+Un hospital privado está buscando mejorar su presencia en línea mediante la creación de un
+sitio web que proporcione información clara y fácil de navegar para los pacientes. El sitio web
+debe reflejar la identidad del hospital, con información sobre los servicios médicos, el equipo
+médico, y una manera sencilla para que los pacientes puedan contactarse.
+
+Objetivo:
+--------- 
+1. Crear una estructura básica de la página web para el hospital.
+2. Añadir un diseño intuitivo y responsivo.
+
+Instrucciones para visualizar el sitio web:
+-------------------------------------------
+1. Descargar el código fuente del sitio web en HTML y CSS.
+2. Abrir el archivo index.html en un navegador web.
+
+Estructura de carpetas y archivos:
+-----------------------------------
+
+- index.html: Archivo principal del sitio web.
+
+- estilo css: Archivo CSS para estilizar el sitio web.
+
+- assets: Carpeta que contiene imágenes y logos del hospital.
+
+-contacto.html: Archivo para la página de contacto del hospital.
+
+-equipo.html: Archivo para la página del equipo médico del hospital.
