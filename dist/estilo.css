@@ -1,0 +1,475 @@
+@charset "UTF-8";
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e6f7ff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/*Sección navbar*/
+.navbar {
+  background-color: #183e9f;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between; /* Espacio entre logo y menú */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar__logo {
+  width: 231px;
+  height: 69px;
+  flex-shrink: 0; /* Evita que el logo se vea afectado por la redimension */
+}
+
+.navbar__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__link {
+  display: inline;
+}
+
+.navbar__ancla {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+}
+
+/*Sección responsive */
+@media (max-width: 583px) {
+  .navbar {
+    background-color: #183e9f;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 20px;
+  }
+  .navbar__logo {
+    width: 231px;
+    height: 69px;
+    margin: auto; /* Centrar el logo */
+  }
+  .navbar__lista {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none; /* Quita el marcador de lista */
+    display: block; /*muestra los elementos como elementos de lista*/
+  }
+  .navbar__lista {
+    margin: 10px 0; /* Espacio entre los enlaces */
+    display: block; /* muestra los elementos como elementos de lista*/
+  }
+  .navbar__ancla {
+    display: block; /* muestra los enlaces como elementos de lista*/
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar__ancla:hover {
+    background-color: #142c7d;
+  }
+}
+/* Sección Banner */
+.banner {
+  background-size: cover; /* La imagen cubre toda la sección */
+  background-position: center; /* Centrar la imagen */
+  height: 100vh; /* El banner ocupa toda la altura de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  color: white; /* Color de texto */
+  text-align: center; /* Texto centrado */
+  position: relative;
+}
+
+/* Fondo oscuro semi-transparente sobre la imagen */
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner__content {
+  position: relative;
+  z-index: 2; /* Coloca el contenido por encima del fondo oscuro */
+  max-width: 600px;
+  padding: 20px;
+}
+
+.banner__titulo {
+  font-size: 40px;
+  margin: 0; /* Quita el margen del título */
+}
+
+.banner__bajada {
+  font-size: 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.banner__boton {
+  background-color: #1b9ce4;
+  border: 2px solid #64ebb6;
+  color: white;
+  padding: 16px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 32px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.banner__boton:hover {
+  border-color: #ffffff;
+}
+
+#banner-index {
+  background-image: url("../assets/img/banner-1.png");
+}
+
+#banner-equipo {
+  background-image: url("../assets/img/banner-2.png");
+}
+
+#banner-contacto {
+  background-image: url("../assets/img/banner-contacto.png");
+}
+
+/*Sección misión Hospital*/
+.mision {
+  display: flex;
+  gap: 20px;
+  padding: 60px;
+}
+
+.mision__left, .mision__right {
+  flex: 1; /* Hace que cada columna ocupe el mismo espacio */
+}
+
+/*Sección responsive*/
+@media (max-width: 417px) {
+  .mision {
+    display: block; /* muestra los elementos como elementos de lista*/
+    gap: 20px;
+    padding: 10px;
+  }
+  .mision__left, .mision__right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/*Sección tarjetas*/
+.tarjetas {
+  display: flex;
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap; /* Permite que las cards se ajusten si no caben en una línea */
+}
+
+.tarjetas__contenedor {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjetas__contenedor:hover {
+  transform: translateY(-10px); /* Efecto hover en la card */
+}
+
+.tarjetas__img {
+  width: 202px;
+  height: 202px;
+  object-fit: cover;
+}
+
+.tarjetas__titulo {
+  font-size: 24px;
+  margin: 16px 0 8px;
+  color: #1b9ce4;
+}
+
+.tarjetas__descripcion {
+  font-size: 16px;
+  color: #333;
+  padding: 0 16px 16px;
+}
+
+.tarjetas__boton {
+  background-color: #64ebb6;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-block; /* Botón centrado */
+  margin-bottom: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tarjetas__boton:hover {
+  background-color: #1b9ce4;
+}
+
+/* Seccion carousel de testimonios */
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.testimonial__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial__img:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial__nombre {
+  font-size: 20px;
+  color: #1b9ce4;
+  margin-bottom: 10px;
+}
+
+.testimonial__descripcion {
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.testimonial-item {
+  margin: 0 10px;
+}
+
+/*Seccion responsive*/
+@media (max-width: 848px) {
+  .testimonial {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .testimonial-item {
+    margin: 0 10px; /* Espacio entre las tarjetas */
+    padding: 10px;
+  }
+}
+.testimonios__columna {
+  margin-left: 60px;
+}
+
+@media (max-width: 848px) {
+  .testimonios__columna {
+    margin: 5px;
+    text-align: center;
+  }
+}
+/*Seccion footer*/
+footer {
+  background-color: #183e9f;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer__contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__logo img {
+  max-width: 250px;
+}
+
+.footer__links, .footer__contacto, .footer__social {
+  flex: 1;
+  margin: 20px;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__links ul li {
+  margin: 10px 0;
+}
+
+.footer__links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer__links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__contacto p, .footer__social a {
+  margin: 10px 0;
+}
+
+.footer__social a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+
+.footer__social a:hover {
+  color: #64ebb6;
+}
+
+/* Sección formulario de contacto */
+.formulario {
+  max-width: 400px;
+  margin: 0 auto; /* Centrar el formulario */
+  padding: 20px;
+  border: 2px solid #64ebb6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-top: 100px;
+}
+
+/* Estilo de los campos de entrada */
+.formulario__campos {
+  margin-bottom: 15px;
+}
+
+.formulario__label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formulario__input,
+.formulario__textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #64ebb6; /* Borde con color especificado */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px;
+  box-sizing: border-box; /* Asegura que padding no afecte el ancho */
+  background-color: #fff;
+  resize: none; /* Evita que el textarea se redimensione */
+}
+
+.formulario__boton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #64ebb6;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario__boton:hover {
+  background-color: #52dca0;
+}
+
+.medicos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px;
+  max-width: 1200px; /* Asegúrate de que el contenedor tenga suficiente espacio */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding-bottom: 60px;
+}
+
+.medicos__tarjeta {
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards por fila, restando espacio entre ellas */
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+}
+
+.medicos__tarjeta:hover {
+  transform: translateY(-10px); /* Efecto hover */
+}
+
+.medicos__imagen {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; /* Asegura que la imagen se vea bien recortada */
+  margin-bottom: 15px;
+}
+
+.medicos__titulo {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.medicos__descripcion {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .medicos__tarjeta {
+    flex: 1 1 calc(50% - 20px); /* 2 cards por fila en pantallas pequeñas */
+  }
+}
+@media (max-width: 480px) {
+  .medicos__tarjeta {
+    flex: 1 1 100%; /* 1 card por fila en pantallas muy pequeñas */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

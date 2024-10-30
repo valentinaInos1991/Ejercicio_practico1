@@ -1,0 +1,11 @@
+//base global
+@use '../styles/variables.scss' as *;
+
+body{
+    font-family: $fuente-principal;
+    background-color: $color-principal;
+    margin: 0;
+    padding: 0;
+    list-style: $lista-sin-estilo;
+    box-sizing: border-box;
+}
