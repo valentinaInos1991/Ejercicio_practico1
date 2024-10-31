@@ -1,34 +1,27 @@
-Ejercicio práctico 1
+Ejercicio práctico 2
 --------------------
 
 Ejercicio Práctico: Desarrollo de la Página Web de un Hospital
 
-Contexto:
-----------
-Un hospital privado está buscando mejorar su presencia en línea mediante la creación de un
-sitio web que proporcione información clara y fácil de navegar para los pacientes. El sitio web
-debe reflejar la identidad del hospital, con información sobre los servicios médicos, el equipo
-médico, y una manera sencilla para que los pacientes puedan contactarse.
+Descripción del Proyecto
+--------------------------
 
-Objetivo:
---------- 
-1. Crear una estructura básica de la página web para el hospital.
-2. Añadir un diseño intuitivo y responsivo.
+* Este proyecto consiste en la creación de un sitio web modularizado para un hospital ficticio, usando SASS para organizar y estructurar los estilos CSS de manera eficiente. La modularización facilita el mantenimiento, la escalabilidad del código y permite la reutilización de componentes comunes en varias páginas del sitio.
 
-Instrucciones para visualizar el sitio web:
--------------------------------------------
-1. Descargar el código fuente del sitio web en HTML y CSS.
-2. Abrir el archivo index.html en un navegador web.
+Implementación de la Modularización de Estilos y Media Queries
+---------------------------------------------------------------
 
-Estructura de carpetas y archivos:
------------------------------------
+* Modularización de Estilos: Cada sección de la página (como la cabecera, el pie de página, la navegación y las tarjetas) está separada en archivos SASS individuales. Esto permite trabajar en cada componente por separado sin interferir con otros.
 
-- index.html: Archivo principal del sitio web.
+* Media Queries: Las consultas de media (media queries) se implementaron en cada componente donde eran necesarias, en lugar de centralizarlas todas en un archivo. Así, cada archivo SASS contiene las adaptaciones específicas para la pantalla de cada componente, manteniendo el código más ordenado y fácil de localizar.
 
-- estilo css: Archivo CSS para estilizar el sitio web.
+Instrucciones para Visualizar el Proyecto
+--------------------------------------------
+1- Instalación de Dependencias: Asegúrate de tener SASS instalado globalmente en tu entorno:
+* npm install -g sass
 
-- assets: Carpeta que contiene imágenes y logos del hospital.
+2- Compilación del Código SASS: Ejecuta el siguiente comando desde la carpeta raíz del proyecto para compilar los archivos SASS:
+* sass --watch styles/main.scss:dist/estilo.css
 
--contacto.html: Archivo para la página de contacto del hospital.
-
--equipo.html: Archivo para la página del equipo médico del hospital.
+3- Visualización en Navegador: 
+* Abre el archivo index.html en tu navegador web buscando el archivo index.html en la carpeta pages.
