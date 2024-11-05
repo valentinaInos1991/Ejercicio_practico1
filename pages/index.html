@@ -6,30 +6,50 @@
     <title>Hospital Prueba</title>
     <link rel="stylesheet" type="text/css" href="../dist/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml"> 
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> 
 </head>
-<body>
-    <nav class="navbar">
-        <a class="navbar__ancla" href="#">
-            <img class="navbar__logo" src="../assets/img/logo-blanco-horizontal.png" alt="Logo del hospital"> 
-        </a>
-        <ul class="navbar__lista">
-            <li class="navbar__link"><a class="navbar__ancla" href="index.html">Inicio</a></li>
-            <li class="navbar__link"><a class="navbar__ancla" href="equipo.html">Equipo médico</a></li>
-            <li class="navbar__link"><a class="navbar__ancla" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+<body class="body-mio">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo-blanco-horizontal.png" alt="Logo hospital" width="231" height="69">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/equipo.html">Equipo médico</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+              </ul>
+              <a href="/pages/contacto.html" class="d-flex">
+              <button type="button" class="btn btn-outline-success btn-custom">Agendar hora</button> 
+              </a>
+          </div>
+      </div>
+  </nav>
+  
     <section id="banner-index" class="banner">
         <div class="banner__content">
             <h1 class="banner__titulo">Bienvenido al Hospital Cordis</h1>
             <p class="banner__bajada">Cuidando tu salud cardovascular con los mejores especialistas.</p>
-            <a href="#" class="banner__boton">Reserva tu hora</a>
+            <a href="/assets/img/banner-1.png" class="banner__boton">Reserva tu hora</a>
         </div>
     </section>
+    
     <section>
         <div class="mision">
             <div class="mision__left">
-                <h2 style="text-decoration: underline; text-decoration-color: #64ebb6;">Descubre los servicios que tenemos para ti</h2>
+                <h3 style="text-decoration: underline; text-decoration-color: #64ebb6;">Descubre los servicios que tenemos para ti</h2>
                 <p>TU SALUD CARDIOVASCULAR, NUESTRO COMPROMISO</p>
             </div>
             <div class="mision__right">
@@ -37,26 +57,52 @@
             </div>
         </div>           
     </section>
-    <div class="tarjetas">
-        <div class="tarjetas__contenedor">
-            <img src="../assets/img/consultas.png" alt="consultas" class="tarjetas__img">
-            <h3 class="tarjetas__titulo">Consultas</h3>
-            <p class="tarjetas__descripcion">Hospital Cordis cuenta con cómodas y confortables consultas médicas, equipadas con la última tecnología, operada por los mejores profesionales, con la finalidad de otorgarles a nuestros pacientes un servicio de alta calidad profesional.</p>
-            <a href="#" class="tarjetas__boton">Reservar hora</a>
+
+    <div class="tarjetas row row-cols-1 row-cols-md-3 g-4">
+      <!-- Tarjeta 1 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/consultas.png" class="tarjetas__img card-img-top" alt="Consultas">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Consultas</h5>
+            <p class="tarjetas__descripcion card-text">
+              Hospital Cordis cuenta con cómodas y confortables consultas médicas, equipadas con la última tecnología, operada por los mejores profesionales, con la finalidad de otorgarles a nuestros pacientes un servicio de alta calidad profesional.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
         </div>
-        <div class="tarjetas__contenedor">
-            <img src="../assets/img/examenes.png" alt="examenes" class="tarjetas__img">
-            <h3 class="tarjetas__titulo">Exámenes</h3>
-            <p class="tarjetas__descripcion">Te ofrecemos 22 exámenes especia-lizados para cuidar de tu visión con precisión y tecnología de vanguardia. Desde evaluaciones detalladas hasta pruebas avanzadas, confía en nosotros para mantener salud vascular en su mejor estado.</p>
-            <a href="#" class="tarjetas__boton">Reservar hora</a>
+      </div>
+    
+      <!-- Tarjeta 2 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/examenes.png" class="tarjetas__img card-img-top" alt="Exámenes">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Exámenes</h5>
+            <p class="tarjetas__descripcion card-text">
+              Te ofrecemos 22 exámenes especializados para cuidar de tu visión con precisión y tecnología de vanguardia. Desde evaluaciones detalladas hasta pruebas avanzadas, confía en nosotros para mantener salud vascular en su mejor estado.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
         </div>
-        <div class="tarjetas__contenedor">
-            <img src="../assets/img/cirugias.png" alt="cirugías" class="tarjetas__img">
-            <h3 class="tarjetas__titulo">Cirugías</h3>
-            <p class="tarjetas__descripcion">En el Hospital Cordis, las cirugías son seguras y confiables, se realizan con equipos de tecnología de punta, además de que las intervenciones se llevan a cabo con los mejores insumos y en quirófanos de alta calidad.</p>
-            <a href="#" class="tarjetas__boton">Reservar hora</a>
+      </div>
+    
+      <!-- Tarjeta 3 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/cirugias.png" class="tarjetas__img card-img-top" alt="Cirugías">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Cirugías</h5>
+            <p class="tarjetas__descripcion card-text">
+              En el Hospital Cordis, las cirugías son seguras y confiables, se realizan con equipos de tecnología de punta, además de que las intervenciones se llevan a cabo con los mejores insumos y en quirófanos de alta calidad.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
         </div>
+      </div>
     </div>
+    
+    
     <section>
         <div class="testimonios">
             <div class="testimonios__columna">
@@ -82,6 +128,8 @@
             <p class="testimonial__descripcion">"El equipo médico fue muy atento y siempre estuve en buenas manos."</p>
         </div>
     </div>
+<!-- JavaScript de Bootstrap y dependencias -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 <footer>
    

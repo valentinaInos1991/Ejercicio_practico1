@@ -1,5 +1,7 @@
 /* Sección Banner */
 @use '../styles/variables.scss' as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 .banner{
     background-size: cover; /* La imagen cubre toda la sección */
@@ -69,3 +71,4 @@
 #banner-contacto{
     background-image: url('../assets/img/banner-contacto.png')
 }
+
