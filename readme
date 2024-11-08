@@ -1,3 +1,11 @@
+Taller 1 Modulo 3
+------------------
+
+¿Es recomendable incluir JavaScript avanzado o TypeScript en el proyecto?
+
+* En conclusión, sí es recomendable implementar JavaScript avanzado o TypeScript en el sitio web del hospital si se busca un proyecto escalable y de alta calidad a largo plazo. TypeScript en particular ofrecería beneficios en términos de mantenimiento, seguridad y reducción de errores.
+* Dado el tiempo que tenemos para realizar el proyecto y sin experiencia TypeScript, podría ser más práctico optar solo por JavaScript avanzado. Sin embargo, si en un futuro el sitio web requiere altos requerimientos de seguridad y estabilidad, el uso de TypeScript representa una mejor alternativa.
+
 Ejercicio práctico 3
 --------------------
 
