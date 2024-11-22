@@ -50,11 +50,36 @@
             </div>
             <div class="mision__right">
                 <p>En el Hospital Cordis contamos con destacados profesionales preparados para atender sus problemas de salud CARDIOVASCULAR formados en las distintas especialidades que usted y su familia necesita.</p>
-            </div>
+                <p>Presiona el botón VER para conocer a los profesionales con más de 5 años de experiencia</p>
+                 <!-- Modal médicos con más experiencia -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  VER
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Médicos con más de 5 años de Experiencia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="equipo-medico">
+          <!-- Aquí se agregarán los doctores dinámicamente -->
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div> 
+            </div>        
         </div>           
     </section>
 
-    <section class="medicos">
+    <section class="medicos"> 
         <div class="medicos__tarjeta">
           <img src="../assets/img/Dra. María Isabel Concha Ríos.png" class="medicos__imagen" alt="Dra. María Isabel Concha Ríos">
           <h3 class="medicos__titulo">Dra. María Isabel Concha Ríos</h3>
@@ -91,6 +116,7 @@
           </div>
       </section>
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../scripts/main.js"></script>
 </body>
       
 

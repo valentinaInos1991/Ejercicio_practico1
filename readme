@@ -1,3 +1,43 @@
+Taller 2 Módulo 3
+--------------------
+ INSTRUCCIONES PARA VER LO QUE SE PIDE EN LA TAREA:
+* 1.- VALIDACIÓN DE DATOS INGRESADOR POR EL USUARIO: ABRIR INDEX.HTML Y APARECERÁ UN ALERT DICIENDO QUE DEBE PRESIONAR EL BOTÓN "RESERVA TU HORA", AL PRESIONAR EL BOTÓN SE ABRIRÁN LOS PROMTS PARA PEDIR LA INFORMACIÓN.
+* 2.- CICLOS E ITERACIONES EN LA INTERFAZ: ABRIR LA PAGINA EQUIPO.HTML, APARECERÁ UN ALERT DICIENDO QUE DEBE PRESIONAR EL BOTON "VER" PARA VER LA LISTA DE LOS MÉDICOS CON MÁS DE 5 AÑOS DE EXPERIENCIA. DEBE BAJAR UN POCO MÁS Y VERÁ EL BOTÓN, AL PRESIONARLO APARECERÁ UN MODAL CON LA LISTA DE LOS MÉDICOS. 
+
+Instrucciones sobre cómo usar el debugger y el manejo de errores con try/catch:
+*El proyecto utiliza try/catch para manejar errores durante las validaciones. Si los datos ingresados por el usuario no son válidos, se lanza un error personalizado con throw new Error. Este error se captura en el bloque catch y se muestra al usuario mediante un mensaje de alerta. También aparecen los errores en la consola*
+* Para utlizar el debugger, luego de ingresar los datos a través de los prompts se activará el debugger en donde se debe abrir la inspección para rastrear cómo se procesan las variables y validaciones. Haciendo click en el boton siguiente se podrá salir del debugger.
+* Para ver como se capturan los errores de try/catch se debe ingresa un dato incorrecto, ej: poner letras en el telefono y el error aparecerá en la consola de la inspección.
+
+Explicación del scope de variables y el uso de operadores:
+* Scope de Variables:
+----------------------
+* Las variables nombre, email y telefono están definidas dentro del alcance de la función del evento click. Esto asegura que sean accesibles únicamente durante la ejecución de la validación y no estén disponibles globalmente.
+* Operadores Utilizados:
+* Operador lógico &&: Se usa para asegurarse de que todas las condiciones se cumplan antes de validar los datos.
+* Operador lógico ||: Se emplea para manejar varias condiciones de error en las validaciones.
+* typeof: Comprueba el tipo de dato ingresado (cadena en este caso).
+* isNaN: Verifica si un valor no es un número válido.
+
+Descripción de la integración de prompts y cómo se validan los datos ingresados por el usuario:
+* Se agregan prompts en la página de inicio para indicar al usuario que debe presionar el botón "Reservar tu hora" para ingresar sus datos a través de prompts que piden sus datos.
+* Luego de que se ingresan los datos se muestran alerts en el caso de que algún dato esté erróneo, indica que dato se debe corregir, de lo contrario si los datos son correctos, aparece un alert indicando que todos los datos son correctos. También aparecen mensajes en la consola dependiendo si los datos son correctos o incorrectos.
+
+Explicación uso de debugger para rastrear posibles errores dentro del código:
+* Uso debugger en el bloque de validación del nombre para inspeccionar el flujo del programa y confirmar que las variables nombre y email contienen los valores correctos.
+
+Explica en el archivo README cómo funciona el event loop (stack, heap,queue) en JavaScript:
+* El event loop es una parte fundamental de JavaScript que organiza la ejecución del código, especialmente para funciones asincrónicas. A grandes rasgos, funciona así:
+
+    *Stack (pila):
+    - Aquí se almacenan las tareas para ejecutar en el orden en que llegan.
+    *Heap (montón):
+    - Un espacio en memoria donde se almacenan objetos y variables.
+    *Queue (cola): 
+    -Donde se guardan las tareas en espera (por ejemplo, callbacks de eventos).
+
+    *Cuando una tarea se ejecuta, se coloca en el stack. Si una tarea es asincrónica (como una solicitud a un servidor), se pasa a la queue y se maneja cuando el stack esté vacío.
+
 Taller 1 Modulo 3
 ------------------
 
