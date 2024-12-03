@@ -1,3 +1,31 @@
+Evaluación Módulo 3 - Laboratorio 1
+----------------------------------------------------------------
+
+▪ Explica en el archivo README la complejidad de los algoritmos utilizados, aplicando conceptos de Big-O y complejidad ciclomática.
+* Algoritmo de Búsqueda (Encontrar un doctor específico) :Se utilizó el método find() de JavaScript para buscar un doctor en el arreglo de doctores por su nombre. Este método recorre el arreglo hasta encontrar un elemento que cumpla con la condición.
+* Complejidad Temporal (Big-O): Caso promedio y peor caso: 𝑂(𝑛)O(n), donde n es el número de doctores en el arreglo. Esto se debe a que, en el peor caso, el algoritmo podría tener que revisar todos los elementos del arreglo antes de encontrar el resultado o confirmar que no existe. 
+* Mejor caso: 𝑂(1)O(1), si el primer elemento cumple con la condición. Complejidad Espacial: 𝑂(1)O(1), ya que no utiliza espacio adicional significativo.
+* Complejidad Ciclomática: La complejidad ciclomática es 1 porque no hay ramas ni bucles explícitos en el código.
+
+* Algoritmo de Ordenamiento (Ordenar doctores por años de experiencia): Se utilizó el método sort() de JavaScript para ordenar el arreglo de doctores según sus años de experiencia en orden ascendente.
+* Complejidad Temporal (Big-O): El método sort() utiliza una implementación optimizada (generalmente QuickSort o Timsort): Promedio: 𝑂(𝑛log⁡𝑛)O(nlogn), donde n es el número de elementos en el arreglo.Peor caso: 𝑂(𝑛2)O(n 2 ), si el método implementa QuickSort y el arreglo está muy desbalanceado. En la práctica, para la mayoría de los navegadores modernos (que usan Timsort), el peor caso también es 𝑂(𝑛log⁡𝑛)O(nlogn).Complejidad Espacial:Promedio: 𝑂(log⁡𝑛)O(logn), debido a la pila de recursión en uickSort o al manejo de subarreglos en Timsort.
+* Complejidad Ciclomática: La complejidad ciclomática es 1 porque no hay ramas ni bucles explícitos en el código. Todo el trabajo es realizado internamente por el método sort().
+
+▪  Explicación de cómo se implementaron los objetos JSON y las operaciones realizadas (clonación, merge, recorrido).
+*Los objetos JSON se diseñaron para representar un listado de doctores en el hospital. Cada doctor incluye información como nombre, especialidad, años de experiencia y disponibilidad. Además, cada objeto tiene información adicional organizada en propiedades anidadas, como horario de atención y contacto.*
+
+*Clonación: Se usó JSON.stringify() para evitar modificar objetos originales.*
+*Fusión: Se utilizó el operador spread (...) para combinar propiedades de objetos.*
+*Recorrido: Se empleó forEach para iterar y filtrar datos.*
+*Stringify: Convierte objetos JSON a cadenas para mostrar en consola o enviar como datos serializados.*
+
+▪ Explicación de las estructuras de datos implementadas (arreglos, pilas, colas) y
+su utilidad en el proyecto.
+*Arreglos: Almacenar y gestionar datos relacionados con los doctores.*
+*Pilas: Gestionar citas médicas en el orden de agendamiento, priorizando las últimas.*
+*Colas	Organizar el turno de pacientes según su orden de llegada.*
+
+
 Taller 2 Módulo 3
 --------------------
  INSTRUCCIONES PARA VER LO QUE SE PIDE EN LA TAREA:

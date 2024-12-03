@@ -84,6 +84,9 @@
           <img src="../assets/img/Dra. María Isabel Concha Ríos.png" class="medicos__imagen" alt="Dra. María Isabel Concha Ríos">
           <h3 class="medicos__titulo">Dra. María Isabel Concha Ríos</h3>
           <p class="medicos__descripcion">Médico Cardiólogo Universidad de Chile.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDoctoraMaria">
+            Info doctor
+          </button>
         </div>
       
         <div class="medicos__tarjeta">
@@ -115,6 +118,25 @@
             <p class="medicos__descripcion">Médico Cardiólogo Universidad Diego Portales</p>
           </div>
       </section>
+         <!-- Modal -->
+         <div class="modal fade" id="modalDoctoraMaria" tabindex="-1" aria-labelledby="modalDoctoraMariaLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalDoctoraMariaLabel">Información detallada médico</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div id="info-dra-maria">
+                  <!-- Aquí se agregarán los doctores dinámicamente -->
+              </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div> 
       <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
       <script src="../scripts/main.js"></script>
 </body>
