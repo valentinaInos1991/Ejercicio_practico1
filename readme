@@ -1,3 +1,35 @@
+Evaluación Módulo 3 - Laboratorio 2
+--------------------------------------------------------------
+1. Programación Funcional Aplicada
+En este proyecto, se implementaron varios conceptos de programación funcional para resolver problemas de manera declarativa y reutilizable:
+
+* Funciones Puras
+Las funciones desarrolladas como aplicarDescuento y calcularCostoConDescuento son puras porque, dado un mismo conjunto de entradas, siempre producen la misma salida sin generar efectos secundarios.
+* Currying
+Se usó currying para calcular costos totales, lo que permite dividir una función que toma múltiples argumentos en una secuencia de funciones que toman un solo argumento.
+* Composición de Funciones
+Se empleó la composición de funciones para aplicar descuentos basados en la cantidad de consultas realizadas.
+
+2. Eventos y Asincronía
+* Eventos Personalizados
+Se implementaron eventos personalizados como nuevoPaciente para notificar cuando un nuevo paciente llegaba. Esto permite modularidad y separación de responsabilidades al comunicar diferentes partes del código.
+
+* Asincronía
+Se utilizó asincronía para manejar eventos del DOM, como enviar un formulario o procesar datos en segundo plano. Ventaja: Los procesos largos como solicitudes a servidores no bloquean el flujo de la aplicación.
+
+3. Clases e Implementación de la Programación Orientada a Objetos
+* Clases y Herencia
+Se definió una estructura jerárquica utilizando clases para modelar los doctores y sus especialidades:
+Clase Base: Doctor - Subclase: Cirujano
+
+* Uso de Herencia
+La subclase Cirujano extiende las funcionalidades de la clase base Doctor, reutilizando el código para propiedades y métodos comunes mientras agrega nuevos atributos (operaciones) y métodos personalizados.
+* Encapsulación
+Se protegió la propiedad experiencia en la clase Doctor utilizando un getter y un setter. Ventaja: Garantiza que los datos sean válidos y evita accesos directos no controlados.
+
+* Polimorfismo
+Se sobrescribió el método mostrarInformacion en la clase Cirujano para personalizar el comportamiento.
+
 Evaluación Módulo 3 - Laboratorio 1
 ----------------------------------------------------------------
 
